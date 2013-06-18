@@ -1,4 +1,3 @@
-# This is a guess the number game.
 import random
 
 guessesTaken = 0
@@ -6,8 +5,7 @@ print('Hello! What is your name?')
 myName = raw_input()
 number = random.randint(1, 50)
 print('Well, ' + myName + ', I am thinking of a number between 1 and 50.')
-print('Take a guess... Know that I am thinking of a deeper meaning to...') # There are four spaces in front of print.
-while guessesTaken < 10:
+print('Take a guess... Know that I am thinking of a deeper meaning to...')
     if guessesTaken >= 1:
         print('Try again')
     guess = raw_input()
