@@ -1,4 +1,5 @@
 import random
+import asciiart
 
 guessesTaken = 0
 print('Hello! What is your name?')
@@ -6,6 +7,7 @@ myName = raw_input()
 number = random.randint(1, 50)
 print('Well, ' + myName + ', I am thinking of a number between 1 and 50.')
 print('Take a guess... Know that I am thinking of a deeper meaning to...')
+while guessesTaken < 10:
     if guessesTaken >= 1:
         print('Try again')
     guess = raw_input()
@@ -26,25 +28,7 @@ print('Take a guess... Know that I am thinking of a deeper meaning to...')
         break
 if guess == number:
     guessesTaken = str(guessesTaken)
-    print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!' +
-        ''' ,_
-          | `""---..._____
-          '-...______    _````"""""""'`|
-                 \   ```` ``"---...__  |
-                 |`              |   ``!
-                 |               |     A
-                 |               /\   /#\\
-                 /`--..______..-'  |  ###
-                |   /  `\    /`--. |  ###
-               _|  |  .-;`-./;-.  ||  ###
-              / \  \ /\_|    |_/\ //\ ##'
-              |  `-' \__/ _  \__/ |  |`#
-              \_,                 /_/
-                 `\              /
-                   '.  '.__.'  .'
-            jgs      `-,____,-'
-                      /"""I""\\
-                     /`---'--'\ ''')
+    print(asciiart.win(myName, guessesTaken))
 if guess != number:
     number = str(number)
     print('Nope. The number I was thinking of was ' + number)
