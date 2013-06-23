@@ -21,9 +21,9 @@ while guessesTaken < 10:
         print('Your guess is outta range broheimh')
         continue
     if guess < number:
-        print('Your guess is too low.')
+        print('Your guess is too fucking low.')
     if guess > number:
-        print('Your guess is too high.')
+        print('Your guess is too high, dipshit.')
     if guess == number:
         break
 if guess == number:
