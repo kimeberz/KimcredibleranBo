@@ -6,7 +6,7 @@ print('Hello! What is your name?')
 myName = raw_input()
 number = random.randint(1, 50)
 print('Well, ' + myName + ', I am thinking of a number between 1 and 50.')
-print('Take a guess... Know that I am thinking of a deeper meaning to...')
+print('Take a guess...')
 while guessesTaken < 10:
     if guessesTaken >= 1:
         print('Try again')
